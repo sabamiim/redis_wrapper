@@ -3,7 +3,7 @@ from redis_wrapper import RedisWrapper
 if __name__ == "__main__":
     redis_db = RedisWrapper()
 
-    redis_db.set("name","saba",ex=120)
+    redis_db.set("name","zahra",ex=120)
     print(redis_db.get("name"))
 
     redis_db.set("user:1",{"name":"ali","age":22})
